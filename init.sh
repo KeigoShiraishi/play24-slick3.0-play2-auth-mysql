@@ -67,6 +67,7 @@ apt-get -y install ssh
 apt-get -y install expect
 apt-get -y install nodejs
 apt-get -y install npm
+npm install bower -g
 update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 
 # for github keygen
@@ -194,6 +195,7 @@ echo 'case "$1" in' >> "seven_script"
 echo '  start)' >> "seven_script"
 echo '    cd /home/ubuntu/workspace/play24-slick3.0-play2-auth-mysql' >> "seven_script"
 echo '    git pull' >> "seven_script"
+echo '    bower --allow-root install' >> "seven_script"
 echo '    ./activator playUpdateSecret' >> "seven_script"
 echo '    ./activator dist' >> "seven_script"
 echo '    cd /home/ubuntu' >> "seven_script"
