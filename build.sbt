@@ -2,7 +2,7 @@ import com.typesafe.config.ConfigFactory
 
 name := """play24-slick3-auth-example"""
 
-version := "1.0-SNAPSHOT"
+version := "1_0_0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -49,3 +49,5 @@ lazy val slickCodeGenTask = (sourceManaged, dependencyClasspath in Compile, runn
   val fname = outputDir + "/Tables.scala"
   Seq(file(fname))
 }
+
+EclipseKeys.preTasks := Seq(compile in Compile)

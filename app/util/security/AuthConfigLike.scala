@@ -1,7 +1,7 @@
 package util.security
 
-import scala.concurrent.{ExecutionContext, Future}
-import scala.reflect.{ClassTag, classTag}
+import scala.concurrent.{ ExecutionContext, Future }
+import scala.reflect.{ ClassTag, classTag }
 
 import play.api.mvc.Results._
 import play.api.mvc._
@@ -47,8 +47,7 @@ trait AuthConfigLike extends AuthConfig {
   }
 
   // TODO cookie configuration
-  /*override lazy val tokenAccessor = new CookieTokenAccessor(
+  override lazy val tokenAccessor = new CookieTokenAccessor(
     cookieSecureOption = play.api.Play.isProd(play.api.Play.current),
-    cookieMaxAge = Some(sessionTimeoutInSeconds)
-  )*/
+    cookieMaxAge = Some(sessionTimeoutInSeconds))
 }
