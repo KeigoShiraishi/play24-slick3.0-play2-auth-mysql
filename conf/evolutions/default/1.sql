@@ -28,7 +28,7 @@ insert into user_account(
   failure_count
 ) values (
   'hoge.fuga@foo.bar',
-  '83627ffa5ab48ecae9d0aafe55940d3d19040319e4b26a94f92d56b6734962e1', --password
+  '83627ffa5ab48ecae9d0aafe55940d3d19040319e4b26a94f92d56b6734962e1',
   'f911422a271cf8a986b8a19d1e948c4d8ac4050bf090dd00d0d3e982c57647b8',
   'hoge',
   'fuga',
