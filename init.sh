@@ -104,7 +104,7 @@ chmod 600 /root/.ssh/seven
 
 # application
 cd workspace
-git clone git@github.com:KeigoShiraishi/play24-slick3.0-play2-auth-mysql.git
+git clone git@github-seven-key:KeigoShiraishi/play24-slick3.0-play2-auth-mysql.git
 cd ../
 
 # java 8

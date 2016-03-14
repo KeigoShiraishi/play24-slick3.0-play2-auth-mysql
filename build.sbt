@@ -1,6 +1,6 @@
 import com.typesafe.config.ConfigFactory
 
-name := """play24-slick3-auth-example"""
+name := "play24-slick3.0-play2-auth-mysql"
 
 version := "1_0_0"
 
