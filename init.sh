@@ -128,7 +128,7 @@ echo '[mysql]' >> "/etc/mysql/my.cnf"
 echo 'default-character-set=utf8' >> "/etc/mysql/my.cnf"
 
 # mysql create db and users
-mysql -u root -pmr0824 < "workspace/play24-slick3.0-play2-auth-mysql/conf/evolutions/default/create_db_users.sql"
+mysql -u root -pmr0824 < "workspace/play24-slick3.0-play2-auth-mysql/conf/evolutions/default/create_database_user.sql"
 
 # mysql remove
 # apt-get remove --purge mysql-server* mysql-common
